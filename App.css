@@ -1,0 +1,172 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f5f6fa;
+}
+
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+
+.sidebar {
+  width: 245px;
+  min-height: 100vh;
+  background: #111d3b;
+  padding: 28px 17px;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 55px;
+}
+
+.logo-icon {
+  font-size: 28px;
+  color: #8d82ff;
+}
+
+.logo h2 {
+  font-size: 19px;
+}
+
+.logo h2 span {
+  color: #9287ff;
+}
+
+.menu-title {
+  color: #8994ad;
+  font-size: 11px;
+  margin: 0 0 15px 10px;
+  letter-spacing: 1px;
+}
+
+.menu-item {
+  padding: 13px 15px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  color: #c4cbe0;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.menu-item.active {
+  background: #493de2;
+  color: white;
+}
+
+/* Main Content */
+
+.main-content {
+  flex: 1;
+  padding: 25px 35px;
+  min-width: 0;
+}
+
+/* Topbar */
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 55px;
+}
+
+.topbar input {
+  width: 350px;
+  padding: 12px 15px;
+  border: 1px solid #e4e5ed;
+  border-radius: 8px;
+  outline: none;
+  background: white;
+  font-size: 13px;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.avatar {
+  width: 38px;
+  height: 38px;
+  background: #7867e9;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* Welcome */
+
+.welcome {
+  margin-bottom: 45px;
+}
+
+.welcome h1 {
+  color: #202943;
+  font-size: 29px;
+  margin-bottom: 10px;
+}
+
+.welcome p {
+  color: #858da0;
+  font-size: 14px;
+}
+
+/* Dashboard Heading */
+
+.dashboard-heading {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  min-height: 160px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.03);
+}
+
+.dashboard-heading h2 {
+  font-size: 22px;
+  color: #202943;
+  margin-bottom: 10px;
+}
+
+.dashboard-heading p {
+  color: #9299a9;
+  font-size: 13px;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .sidebar {
+    width: 180px;
+  }
+
+  .main-content {
+    padding: 20px 14px;
+  }
+
+  .topbar input {
+    width: 190px;
+  }
+
+  .welcome h1 {
+    font-size: 21px;
+  }
+}
